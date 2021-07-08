@@ -1,0 +1,81 @@
+{
+  "tareas": [
+    {
+      "id": 1,
+      "tarea": "Aprender React",
+      "descripción": "Aprender a usar react a un nivel básico",
+      "isFinished": "false",
+      "typeId": 1
+    },
+    {
+      "id": 2,
+      "tarea": "Aprender Vue",
+      "descripción": "Aprender a usar vue a un nivel básico",
+      "isFinished": "false",
+      "typeId": 1
+    },
+    {
+      "id": 3,
+      "tarea": "Aprender Html",
+      "descripción": "Aprender a usar html a un nivel experto",
+      "isFinished": "true",
+      "typeId": 1
+    },
+    {
+      "id": 4,
+      "tarea": "Aprender CSS",
+      "descripción": "Aprender a usar css a un nivel básico",
+      "isFinished": "true",
+      "typeId": 1
+    },
+    {
+      "id": 5,
+      "tarea": "Aprender Javascript",
+      "descripción": "Aprender a usar js a un nivel básico",
+      "isFinished": "false",
+      "typeId": 1
+    },
+    {
+      "id": 6,
+      "tarea": "Aprender Python",
+      "descripción": "Aprender a usar python a un nivel básico",
+      "isFinished": "false",
+      "typeId": 2
+    },
+    {
+      "id": 7,
+      "tarea": "Aprender Bootstrap",
+      "descripción": "Aprender a usar bootstrap a un nivel experto",
+      "isFinished": "true",
+      "typeId": 1
+    },
+    {
+      "id": 8,
+      "tarea": "Aprender metodologias agiles",
+      "descripción": "Aprende a utilizar las metodologias agiles y compartirlas en todos los proyectos",
+      "isFinished": "true",
+      "typeId": 1
+    },
+    {
+      "tarea": "Ingles",
+      "descripción": "Aprende ingles",
+      "isFinished": "false",
+      "typeId": 1,
+      "id": 10
+    },
+    {
+      "tarea": "Java",
+      "id": 13
+    }
+  ],
+  "type": [
+    {
+      "id": 1,
+      "name": "frontend"
+    },
+    {
+      "id": 2,
+      "name": "backend"
+    }
+  ]
+}
