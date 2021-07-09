@@ -35,6 +35,9 @@ export default {
   components: {
     
   },
+  updated(){
+    this.updatedTarea()
+  },
   mounted() {
     this.traerDatos()
   },
