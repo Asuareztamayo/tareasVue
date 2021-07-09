@@ -9,7 +9,7 @@
       <ul v-for="tarea of tareas" :key="tarea.id">
         <li>
           <textarea v-model="tarea.tarea" @change="edit(tarea.tarea)"></textarea>
-          <!-- <button type="submit" @click="updateTarea(tarea.id)" class="btn btn-warning">✏️</button> -->
+          <button type="submit" @click="updateTarea(tarea.id)" class="btn btn-warning">✏️</button>
           <button @click="deleteTarea(tarea.id)" class="btn btn-danger">❌</button>
         </li>
       </ul>
@@ -93,7 +93,12 @@ input {
 }
 
 textarea {
-  background-color: #8FBAC6;
+  background-color: rgb(99, 168, 165);
+  border-color: black;
+}
+
+button {
+  background-color: rgb(74, 160, 156);
   border-color: black;
 }
 </style>
