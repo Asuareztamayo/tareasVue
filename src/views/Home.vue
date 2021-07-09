@@ -76,7 +76,7 @@ export default {
 
 <style lang="scss">
 .crear{
-  background-color: rgb(63, 119, 116);
+  background-color: rgb(74, 160, 156);
 }
 .tarea{
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -90,5 +90,10 @@ export default {
 input {
   border-color: black;
   margin: 20px;
+}
+
+textarea {
+  background-color: #8FBAC6;
+  border-color: black;
 }
 </style>
