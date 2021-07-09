@@ -76,6 +76,7 @@ export default {
       }
       const res = await tareaService.updateTarea(tarea.id, data)
       this.tareas = res.data
+      this.$router.go();
     }
   }
     
