@@ -9,7 +9,14 @@
       <ul v-for="tarea of tareas" :key="tarea.id">
         <li>
           <textarea v-model="tarea.tarea" @change="edit(tarea.tarea)"></textarea>
-          <button type="submit" @click="updateTarea(tarea.id)" class="btn btn-warning">✏️</button>
+          <input
+          class="form-check-input float-end"
+          type="checkbox"
+          v-model="tarea.isFinished"
+          id="flexCheckDefault" @change="updateTask(tarea)"
+        />
+
+          <button type="submit" @click="updateTask(tarea.id)" class="btn btn-warning">✏️</button>
           <button @click="deleteTarea(tarea.id)" class="btn btn-danger">❌</button>
         </li>
       </ul>
@@ -61,14 +68,15 @@ export default {
       this.tareas = res.data
     },
 
-    // edit(tarea) {
-    //   this.updatedTarea = tarea
-    // },
-
-    // async updateTarea(id) {
-    //   const res = await tareaService.updateTarea(id)
-    //   this.tareas = res.data
-    // }
+    async updateTask(tarea) {
+      var data = {
+        id: tarea.id,
+        tarea: tarea.tarea,
+        isFinished: tarea.isFinished
+      }
+      const res = await tareaService.updateTarea(tarea.id, data)
+      this.tareas = res.data
+    }
   }
     
 }

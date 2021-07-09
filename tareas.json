@@ -4,28 +4,28 @@
       "id": 1,
       "tarea": "Aprender React",
       "descripción": "Aprender a usar react a un nivel básico",
-      "isFinished": "false",
+      "isFinished": false,
       "typeId": 1
     },
     {
       "id": 2,
       "tarea": "Aprender Vue",
       "descripción": "Aprender a usar vue a un nivel básico",
-      "isFinished": "false",
+      "isFinished": true,
       "typeId": 1
     },
     {
       "id": 3,
       "tarea": "Aprender Html",
       "descripción": "Aprender a usar html a un nivel experto",
-      "isFinished": "true",
+      "isFinished": false,
       "typeId": 1
     },
     {
       "id": 4,
       "tarea": "Aprender CSS",
       "descripción": "Aprender a usar css a un nivel básico",
-      "isFinished": "true",
+      "isFinished": false,
       "typeId": 1
     },
     {

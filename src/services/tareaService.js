@@ -14,11 +14,8 @@ export const tareaService = {
         return this.getAll()
     },
 
-    updateTarea(id){
-        axios.patch(baseUrl + "tareas/" + id, {
-            tarea: this.updatedTarea
-        })
-        return this.getAll()
+    updateTarea(id, data){
+        axios.patch(baseUrl + "tareas/" + id , data)
     },
 
     deleteTarea(id) {
