@@ -1,7 +1,10 @@
 <template>
   <div class="home">
     <h1>Tareas📘</h1>
-    <div class="tarea">
+    <AddToDo />
+    <FilterToDos />
+    <ToDos />
+    <!-- <div class="tarea">
       <label for="newTarea">Tarea</label>
       <input class="crear" type="text" v-model="tareaNombre" id="newTarea">
       <button @click="addTarea">OK</button>
@@ -22,18 +25,23 @@
       </ul>
       </div>
 
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import {tareaService} from "@/services/tareaService";
+import {tareaService} from "@/services/tareaService"
+import AddToDo from '@/components/AddToDo.vue'
+import FilterToDos from '@/components/FilterToDos.vue'
+import ToDos from '@/components/ToDos.vue'
 
 export default {
   name: 'Home',
   components: {
-    
+    AddToDo,
+    FilterToDos,
+    ToDos
   },
   updated(){
     this.updatedTarea()
