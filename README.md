@@ -1,19 +1,10 @@
 # vuaproject
 
-## Project setup
-```
-npm install
-```
+# Para poder iniciarlo
+npm install 
 
-### Compiles and hot-reloads for development
+# Para correr la web
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Proyecto para aprender Vue.js, en el cual debiamos crear un CRUD con tareas por hacer y hechas, despues fue cambiado a un CRUD con Vuex.
